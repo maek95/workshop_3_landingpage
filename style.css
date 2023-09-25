@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* change font?  https://fonts.google.com/specimen/Roboto */
+}
+
+p {
+  /* unecessary to change font here as well? Depends if we have stuff outside the body? which we shouldnt? */
+  font-family: Arial, Helvetica, sans-serif;
+  
+  /* by default they add margins... */
+  margin-top: 0;
+  margin-bottom: 0;
+}

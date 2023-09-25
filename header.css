@@ -1,0 +1,55 @@
+.header {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* not needed? */
+  align-items: center;
+
+  background-color: lightblue; /* DOES IT MATTER THAT THERE IS OVERFLOW AT THE RIGHT DUE TO DIVS ETC? */
+
+  /* top: 0;
+  left: 0;
+  right: 0; */
+}
+
+.left-section {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.middle-section {
+  background-color: brown;
+  display: flex;
+  flex: 1; /* take up 100% of remaining space...? unneccesary?*/
+  align-items: center; /* flexbox code */
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.right-section {
+  margin-top: 20px;
+  background-color: orangered;
+  display: flex;
+  align-items: center; /* button gets centered vertically WITHIN right-section...? */
+
+  right: 0;
+
+}
+
+.header-text-container {
+  display: flex;
+  margin-right: 5px;
+  /* position: relative; */
+}
+
+.header-text {
+  white-space: nowrap; /* text does not wrap around... i.e. makes the text only get one row*/
+ 
+}
+
+.ansok-button-small {
+
+}
