@@ -10,6 +10,8 @@
   /* top: 0;
   left: 0;
   right: 0; */
+  padding: 0;
+  margin: 0;
 }
 
 .left-section {
@@ -17,6 +19,7 @@
   display: flex;
   align-items: center;
   margin-right: 10px;
+  padding-top: 20px;
 }
 
 .middle-section {
@@ -27,15 +30,16 @@
 
   margin-left: 10px;
   margin-right: 10px;
+  padding-top: 20px;
+
 }
 
 .right-section {
-  margin-top: 20px;
+  padding-top: 20px;
   background-color: orangered;
   display: flex;
   align-items: center; /* button gets centered vertically WITHIN right-section...? */
 
-  right: 0;
 
 }
 
@@ -47,9 +51,18 @@
 
 .header-text {
   white-space: nowrap; /* text does not wrap around... i.e. makes the text only get one row*/
+  font-size: 12px;
  
 }
 
 .ansok-button-small {
 
 }
+
+/* .ansok-button-small .tooltip {
+  opacity: 0; 
+}
+
+.ansok-button-small:hover .tooltip {
+  opacity: 1; 
+} */

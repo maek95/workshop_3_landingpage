@@ -1,0 +1,16 @@
+.section-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; /* better to use padding / margins? */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-container-section-2 {
+  width: 50%; /* take up 50% of section 2*/
+}
+
+.image-section-2 {
+  width: 100%; /* take up 100% of its container (image-container-section-2*/
+}
