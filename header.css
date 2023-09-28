@@ -1,62 +1,104 @@
 .header {
-  height: 50px;
+ /* height: 60px; /* FIXA? inte px*/
+  height: 6%; /* 6% of body */
+
+  width: 100%;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between; /* not needed? */
   align-items: center;
+  position: relative; /* position: absolute ... */
 
   background-color: lightblue; /* DOES IT MATTER THAT THERE IS OVERFLOW AT THE RIGHT DUE TO DIVS ETC? */
 
-  /* top: 0;
-  left: 0;
-  right: 0; */
   padding: 0;
   margin: 0;
+  border-bottom: 2px solid black;
+  /* box-sizing: border-box;  /* already set in style.css * {} */ 
+
+  /* flex-wrap: wrap; /* Allow items to wrap to the next line if needed */ 
 }
 
-.left-section {
+.left-header {
+ /*  width: 40%; */
+ /* width will be what the image is */ 
+  height: 100%;
+
   background-color: aquamarine;
   display: flex;
-  align-items: center;
+  align-items: start;
+  justify-content: start;
   margin-right: 10px;
-  padding-top: 20px;
+
+  
 }
 
-.middle-section {
+.middle-section { /*använder inte */
   background-color: brown;
   display: flex;
-  flex: 1; /* take up 100% of remaining space...? unneccesary?*/
+  flex: 1; /* take up 100% of remaining space...? unneccesary? */
   align-items: center; /* flexbox code */
+
 
   margin-left: 10px;
   margin-right: 10px;
   padding-top: 20px;
+  
 
 }
 
-.right-section {
+.right-header {
+  box-sizing: border-box;
   padding-top: 20px;
   background-color: orangered;
   display: flex;
   align-items: center; /* button gets centered vertically WITHIN right-section...? */
 
+  position: absolute;  /* is always shown on the page... will overlap left section... Otherwise there is an overflow to the right on the page...*/
+  right: 10px; 
+  bottom: 10px;
+/*   max-width: 70%; /* fixed with @media query instead! */
+  
+ /*  flex-grow: 1; /* Allow the right-section to grow and take up available space */ 
+/*   flex-shrink: 0; /* Prevent the right-section from shrinking */ 
+ /*  flex-basis: auto; /* Let the browser determine the initial width */ 
 
 }
 
-.header-text-container {
-  display: flex;
+.nav-header {
+  display: flex; /* content takes up the space it needs */
   margin-right: 5px;
   /* position: relative; */
+
+  height: 100%;
+  width: 100%;
+
 }
 
-.header-text {
-  white-space: nowrap; /* text does not wrap around... i.e. makes the text only get one row*/
-  font-size: 12px;
- 
+.ansok-button-small-text {
+ font-size: 16px;
+}
+
+.nav-header > a {
+  text-wrap: nowrap;
 }
 
 .ansok-button-small {
 
+}
+
+.image-container-header {
+  display: flex;
+  height: 100%;
+  /* width: 100%; */
+}
+
+.logga-img {
+ /*  display: flex; */
+  width: 100%; /* unnecessary? */
+  /* height: 100%; */
+  
 }
 
 /* .ansok-button-small .tooltip {
@@ -66,3 +108,15 @@
 .ansok-button-small:hover .tooltip {
   opacity: 1; 
 } */
+
+@media (max-width: 299px) {
+  .nav-header > a  {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 260px) {
+  .nav-header > a  {
+    font-size: 8px;
+  }
+}

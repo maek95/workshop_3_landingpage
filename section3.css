@@ -1,0 +1,90 @@
+.section-3 {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /* doesn't work since we have assigned height% in the header and box containers...?*/
+
+  height: 100%; /* of main, shared with the other sections in main */ 
+  width: 100%;
+/*   padding-top: 20px;
+  padding-bottom: 20px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+  /* box-sizing: border-box;  /* already set in style.css * {} */ 
+
+  /* position: relative; */
+
+}
+
+.h3-section-3 {
+  text-align: center;
+}
+
+.header-container-section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: greenyellow;
+
+  height: 30%; /* of section-3...*/
+  width: 100%; /* of section-3...*/
+  margin-bottom: 20px;
+
+  /* box-sizing: border-box; /* already i style.css */
+}
+
+.boxes-container-section-3 {
+  background-color: antiquewhite;
+
+  /* 100% of section minus header and padding */
+  width: 100%; /* of section-3...*/
+  height: 70%; /* of section-3...*/
+
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px; /* margin also works... but then width: 100% will be without margin! */
+  padding-right: 10px;
+ /*  justify-content: space-between; */
+}
+
+.box-section-3 {
+ /*  display: flex; */
+  /* box-sizing: border-box; */
+  width: 100%; /* of boxes-container-section-3 */
+  height: 100%;
+  border: 1px solid black;
+}
+
+.middle-box {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-section-3 {
+  padding-top: 10px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  text-align: top;
+  text-wrap: wrap;
+}
+
+
+@media (max-width: 270px) { 
+  .boxes-container-section-3 {
+    flex-wrap: wrap; /* wrap into rows... to fit text... */
+    margin-top: 5px; /* to avoid header and boxes to overlap... */
+  }
+  .middle-box {
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .box-section-3 {
+    height: auto; /* so each box gets equal height when wrapping...*/
+  }
+  
+}

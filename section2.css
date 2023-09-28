@@ -1,16 +1,81 @@
 .section-2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* unnecessary... row is default here.. */
   align-items: center;
-  justify-content: space-evenly; /* better to use padding / margins? */
+  /* justify-content: space-evenly; /* useful IF we don't assign heights/width to the items inside!!!! */
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 2px solid black;
+  /* box-sizing: border-box;  /* already set in style.css * {} */ 
+
+  height: 100%; /* of main */
+  width: 100%;
+
+
 }
 
 .image-container-section-2 {
+  display: flex;
+  align-items: center;
+  background-color: aqua;
   width: 50%; /* take up 50% of section 2*/
+  height: 100%; /* section-2 minus padding */
+ 
 }
 
 .image-section-2 {
-  width: 100%; /* take up 100% of its container (image-container-section-2*/
+  max-width: 100%; /* Does not always have to be width 100%!  */
+  /* width: 100%  /* probably does the same in this case?? */
+  padding-left: 8%;
+  padding-right: 8%;
 }
+
+.text-container-section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 5%;
+  background-color: purple;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  height: 100%;
+  width: 50%; 
+  padding-right: 8%;
+}
+
+.h3-section-2 {
+  /* padding-bottom: 10px; */
+  /* font-size:5vw;  */
+  /* take up 4% of the view port....? */ 
+}
+
+.h4-section-2 {
+  padding-top: 10px;
+ /*  font-size:4vw; */
+
+}
+
+.text-section-2 {
+  padding-top: 10px;
+  /* font-size:3vw;  */
+  font-size: 15px;
+
+}
+
+@media (max-width: 530px) {
+  /*  .section-2 {
+     height: auto;
+   } */
+
+   .text-section-2 {
+    font-size: 12px;
+   }
+ }
+ 
+ @media (max-width: 400px) { /* when body swaps to 1000px height */
+    .text-section-2 {
+      font-size: 9px;
+    }
+  }

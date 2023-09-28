@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="section1.css">
   <link rel="stylesheet" href="section2.css">
+  <link rel="stylesheet" href="section3.css">
+  <link rel="stylesheet" href="section4.css">
+  <link rel="stylesheet" href="footer.css">
   <!-- link more css files? -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chas landing page</title>
@@ -13,44 +16,51 @@
 <body>
   <!-- could use 'div' instead of 'header'... but this structures the code! -->
   <header class="header">
+    
     <!--  DOES IT MATTER THAT THERE IS OVERFLOW AT THE RIGHT DUE TO DIVS ETC? -->
-    <div class="left-section">
-      <div class="header-text-container">
-        <p class="header-text">Logga</p>
-      </div>
+    <div class="left-header">
+      <nav class="image-container-header">
+        <img class="logga-img" src="images/chas-academy-emblem.png" alt="">
+      </nav>
     </div>
-    <div class="middle-section">
-       <!--&nbsp;--> ,
-    </div>
-    <div class="right-section">
-      <div class="header-text-container" style="background-color: green;"> 
-        <p class="header-text">om oss</p>
-      </div>
-      <div class="header-text-container" style="background-color: blue;">
-        <p class="header-text">aktuellt</p>
-      </div>
-      <div class="header-text-container" style="background-color: yellow;">
-        <p class="header-text">kontakt</p>
-      </div>
-      <div class="header-text-container">
+   <!--  <div class="middle-section">
+       &nbsp; ,
+    </div> -->
+    <div class="right-header">
+      <nav class="nav-header" style="background-color: green;"> 
+        <a href="">om oss</a>
+      </nav>
+      <nav class="nav-header" style="background-color: blue;">
+        <a href="">om oss</a>
+      </nav>
+      <nav class="nav-header" style="background-color: yellow;">
+        <a href="">om oss</a>
+      </nav>
+      <nav class="nav-header">
         <button style="background-color: lightgreen;" class="ansok-button-small">
-          <p class="header-text">Ansök</p>
+          <!-- <p class="text-header">Ansök</p> -->
+          <p class="ansok-button-small-text">Ansök</p>
         </button>
-      </div>
+      </nav>
     </div>
   </header>
 
   <!-- 'main'... just to structure the code... doesn't do anything special... -->
   <main>
     <!-- everything in hero-section should be centered? -->
-    <section class="section-1" style="background-color: lightpink;"> 
-      <h2>Vill du vara med</h2> <!-- remove margins? -->
+    <section class="section-1" style="background-color: lightpink;">
+      <div class="text-container-section-1" style="background-color: purple;">
+        <h2 class="h2-section-1">Vill du vara med på resan till världens bästa branch?</h2> 
       <!-- spara h2 till 'Chas Academy' och 'Vad säger våra studenter?'... 'Ansökan är öppen' är större än de två förstnämnda?-->
-      <h4>kom ett steg</h4> <!-- remove margins? -->
-      <button class="ansok-button-large">
-        <!-- use same button in 'Ansökan är öppen!'... same but smaller in header?-->
-        <p>Ansök</p>
-      </button>
+      <h4 class="h4-section-1">Kom ett steg närmare en karriär inom it med våra utbildningar</h4> 
+      </div> 
+      <div class="button-container-section-1">
+        <button class="ansok-button-large">
+          <!-- use same button in 'Ansökan är öppen!'... same but smaller in header?-->
+           <p class="ansok-button-large-text">Ansök</p>
+        </button>  
+      </div>
+     
     </section>
 
     <section class="section-2" style="background-color: green;">
@@ -58,30 +68,77 @@
         <img class="image-section-2" src="images/chas_image.webp" alt="">
       </div>
       <div class="text-container-section-2">
-        <h3>Chas Academy</h3>
-        <h4>Lär känna oss</h4>
-        <p class="section-2-text">Vi kan IT!</p>
+        <h3 class="h3-section-2">Chas Academy</h3>
+        <h4 class="h4-section-2">Lär känna oss</h4>
+        <p class="text-section-2">Vi kan IT! Och snart kan du också det. Med pedagogik och kunskap stöttar våra branschledande huvudlärare studenter i resan från drömjobb till verklighet. Här på Chas Academy.</p>
       </div>
     </section>
 
     <section class="section-3" style="background-color: orange;">
-      <h3>Vad säger våra studenter?</h3>
-      <div class="container-section-3">
-        <div class="box-section-3"></div>
-        <div class="box-section-3"></div>
-        <div class="box-section-3"></div>
+
+      <div class="header-container-section-3">
+        <h3 class="h3-section-3">Vad säger våra studenter?</h3>
+      </div>
+      <div class="boxes-container-section-3">
+        <div class="box-section-3">
+          <p class="text-section-3">KUL OCH UTMANANDE</p>
+        </div>
+        <div class="middle-box box-section-3"> <!-- two classes! -->
+          <p class="text-section-3">SPÄNNANDE</p>
+        </div>
+        <div class="box-section-3">
+          <p class="text-section-3">BÄST!</p>
+        </div>
       </div>
     </section>
     
     <section class="section-4" style="background-color: red;">
-      <h2>Ansökan är öppen!</h2>
-      <button class="ansok-button-large"><p>Ansök</p></button>
+      <div class="text-container-section-4">
+        <h2 class="h2-section-4">Ansökan är öppen!</h2>
+        <h4 class="h4-section-4">blabla</h4>
+      </div>
+
+      <div class="button-container-section-1">
+        <button class="ansok-button-large">
+          <!-- use same button in 'Ansökan är öppen!'... same but smaller in header?-->
+
+          <p class="ansok-button-large-text">Ansök</p>
+        </button>  
+      </div>
     </section>
+
+    <!-- clean code below? remove class="a-footer" and use .nav-column-footer[a] -->
+    <footer class="footer" style="background-color: aquamarine;">
+      <div class="nav-container-footer">
+        <div class="nav-column-footer">
+          <!-- nav is the same as 'div'... just a box...-->
+          <nav class="nav-footer"><a href="">Hem</a></nav>
+          <nav class="nav-footer"><a href="">YH-Program</a></nav>
+          <nav class="nav-footer"><a href="">Chas Upskill</a></nav>
+          <nav class="nav-footer"><a href="">Om oss</a></nav>
+          <nav class="nav-footer"><a href="">Så ansöker du</a></nav>
+          <nav class="nav-footer"><a href="">Kontakt</a></nav>
+          <nav class="nav-footer"><a href="">Aktuellt</a></nav>
+          <nav class="nav-footer"><a href="">Integritetspolicy</a></nav>
+        </div>
+        <div class="nav-column-footer">
+          <nav class="nav-footer"><a href="">Kontakta oss</a></nav>
+          <p>&nbsp;</p> <!-- line break... p has 0 margin 0 padding as set in style.css! -->
+          <nav class="nav-footer"><a href="">Mail</a></nav>
+          <nav class="nav-footer"><a href="">info@chasacademy.se</a></nav>
+          <p>&nbsp;</p> <!-- line break -->
+          <nav class="nav-footer"><a href="">Adress</a></nav>
+          <nav class="nav-footer"><a href="">Arenavägen 61</a></nav>
+          <nav class="nav-footer"><a href="">121 77 Johanneshov</a></nav>
+        </div>
+      </div>
+      <div class="image-container-footer"> 
+         <img class="logga-img-footer" src="images/chas-academy-emblem.png" alt="">
+       </div>     
+    </footer>
 
   </main>
 
-  <footer class="footer">
-
-  </footer>
+  
 </body>
 </html>

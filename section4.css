@@ -1,0 +1,32 @@
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /* useful if we don't assign heights/width to the items inside!!!! */
+  height: 70%; /* of main... a little smaller! */
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+  /* box-sizing: border-box;  /* already set in style.css * {} */ 
+}
+
+/* button is in section1.css  (same button) */
+
+
+.text-container-section-4 {
+  background-color: purple;
+  padding-bottom: 10px;
+}
+
+.h2-section-4 {
+  text-align: center;
+}
+
+.h4-section-4 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+
+

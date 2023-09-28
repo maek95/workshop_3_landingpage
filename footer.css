@@ -1,0 +1,75 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+
+  padding-top: 20px;
+  padding-bottom: 20px; /* unnecessary? */
+  /* box-sizing: border-box;  /* already set in style.css * {} */ 
+
+  height: 100%; /* of <main> */
+  width: 100%;
+}
+
+.text-footer {
+}
+
+.nav-footer > a {
+
+}
+
+.nav-container-footer {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 60%;
+}
+
+.nav-column-footer {
+  background-color: grey;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding-left: 10px;
+}
+
+.image-container-footer {
+ /*  width: 30%; */
+  display: flex;
+  align-items: center;
+  background-color: purple;
+  height: 100%; /* minus section padding */
+  width: 30%;
+  align-items: center;
+  padding-left: 10px;
+
+}
+
+.logga-img-footer {
+  width: 100%; /* resizes automatically... */
+  max-width: 180px; /* do not get an infinetly scaling image... */
+  
+}
+
+
+@media (max-width: 480px) { /* when body swaps to 1000px height */
+  .nav-footer > a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-footer > a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 338px) {
+  .nav-footer > a {
+    font-size: 8px;
+  }
+}

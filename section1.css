@@ -6,5 +6,56 @@
 
   padding-bottom: 20px;
   padding-top: 20px;
+  border-bottom: 2px solid black;
+  /* box-sizing: border-box;  /* already set in style.css * {} */ 
 
+  height: 100%; /* of main */
+  width: 100%;
+
+
+}
+
+.button-container-section-1 {
+  background-color: aqua;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+
+}
+.ansok-button-large {
+  width: 120px;
+  height: 50px;
+}
+
+.ansok-button-large-text {
+  font-size: 20px;  
+}
+
+.text-container-section-1 {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h2-section-1 {
+  padding-bottom: 10px;
+  text-align: center;
+
+ /*  font-size:5vw; */
+}
+
+.h4-section-1 {
+  padding: 10px 0 10px 0;
+  /* font-size:3vw; */
+  text-align: center;
+}
+
+
+@media (max-width: 400px) { /* when body swaps to 1000px height */
+  .text-container-section-1 {
+    width: 90%;
+  }
 }
