@@ -8,10 +8,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid black;
-  /* box-sizing: border-box;  /* already set in style.css * {} */ 
+  /* box-sizing: border-box;  /* already set in style.css *{} */ 
 }
 
-/* button is in section1.css  (same button) */
+/* button settings is in section1.css  (same button) */
 
 
 .text-container-section-4 {

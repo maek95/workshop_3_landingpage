@@ -7,13 +7,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /* unless changed */
   /* change font?  https://fonts.google.com/specimen/Roboto */
-  position: relative;
-/* 
-  display: flex;
+/* display: flex;
   flex-direction: column; */
-  height: 2000px;
+  height: 2000px; /* so we can split up sections in height percent*/
 }
 
 main {
@@ -21,23 +19,18 @@ main {
   flex-direction: column;
   box-sizing: border-box;
 
-  height: 94%; /* header 6%, main 94%... main= section-1, section-2, section-3, section-4, footer
-   some sections (inside main) might take more space than intended just to keep good dimensions/font-size/...? */
+  height: 94%; /*(of body) header 6%, main 94%... main= section-1, section-2, section-3, section-4, footer.
+   some sections (inside main) might take more space than intended just to keep good dimensions/font-size...? */
   width: 100%;
 }
 
 p {
-  /* unecessary to change font here as well? Depends if we have stuff outside the body? which we shouldnt? */
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Fuzzy Bubbles";
   font-size: 15px; /* unless changed... e.g. in @media query*/
-
-  
   /* by default they add margins... */
   margin: 0;
   padding: 0;
-
-  /* font-size: 5vw; */
 }
 
 a {
@@ -47,14 +40,14 @@ a {
 }
 
 h2, h3, h4 {
-  /* remove default settings */
   margin: 0;
   padding: 0;
-  text-wrap: wrap; /* unless changed in e.g media query...*/
+  text-wrap: wrap; 
  /*  font-size: auto; */
 }
 
- @media (max-width: 400px) {
+/* will only swap to this on mobile.. or is that 600px? */
+ @media (max-width: 400px) {  
   body {
     height: 1000px; 
   }
@@ -63,18 +56,8 @@ h2, h3, h4 {
   }  */  
 }
 
-/* 
-h2 {
-  font-size:5vw; 
-} */
-
 /* h3 {
   font-size:5vw; /* take up 5% of the view port....? 
 
 }
 */
-
-/* h4 {
-  font-size:3vw;
-}
- */
