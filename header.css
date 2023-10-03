@@ -77,10 +77,10 @@
 }
 
 .ansok-button-small-text {
- font-size: 16px;
+  font-size: 24px;
 }
 
-.nav-header > a {
+.nav-header > a { /* all 'a' inside nav-header */
   text-wrap: nowrap;
 }
 
@@ -109,14 +109,34 @@
   opacity: 1; 
 } */
 
-@media (max-width: 299px) {
-  .nav-header > a  {
+@media (max-width: 420px) {
+  .nav-header > a  { /* all 'a' inside nav-header */
+    font-size: 19px;
+  }
+
+  .ansok-button-small-text {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-header > a  { /* all 'a' inside nav-header */
     font-size: 12px;
+  }
+
+  .ansok-button-small-text {
+    font-size: 14px;
   }
 }
 
 @media (max-width: 260px) {
   .nav-header > a  {
-    font-size: 8px;
+    font-size: 9px;
   }
+
+  .ansok-button-small-text {
+    font-size: 11px;
+  }
+
 }
+
