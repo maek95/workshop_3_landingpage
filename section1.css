@@ -28,7 +28,7 @@
 }
 
 .ansok-button-large-text {
-  font-size: 20px;  
+  font-size: 26px;  
 }
 
 .text-container-section-1 {
@@ -47,12 +47,22 @@
  /*  font-size:5vw; */
 }
 
+.h4-container-section-1 {
+  background-color: green;
+}
+
 .h4-section-1 {
-  padding: 10px 0 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px; 
   /* font-size:3vw; */
   text-align: center;
 }
 
+@media (min-width: 877px) {
+  .h4-container-section-1 {
+    width: 70%;
+  }
+}
 
 @media (max-width: 400px) { /* when body swaps to 1000px height */
   .text-container-section-1 {
