@@ -1,8 +1,8 @@
 .section-2 {
   background-color: rgb(231, 231, 231);
   display: flex;
-  flex-direction: row; /* unnecessary... row is default here.. */
-  align-items: center;
+  flex-direction: row; /* unnecessary... row is default here..? */
+  /* align-items: center; */
   /* justify-content: space-evenly; /* useful IF we don't assign heights/width to the items inside!!!! */
   padding-top: 20px;
   padding-bottom: 20px;
@@ -24,7 +24,8 @@
 }
 
 .image-section-2 {
-  max-width: 100%; /* Does not always have to be width 100%!  */
+  width: 100%; /* Does not always have to be width 100%!  */
+  max-width: 500px; /* so it does not infinetly grow with the page... */
   /* width: 100%  /* probably does the same in this case?? */
   padding-left: 8%;
   padding-right: 8%;

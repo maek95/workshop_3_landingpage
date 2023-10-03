@@ -1,47 +1,44 @@
 .header {
- /* height: 60px; /* FIXA? inte px*/
   height: 6%; /* 6% of body */
+  box-sizing: border-box;
 
   width: 100%;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between; /* not needed? */
-  align-items: center;
+/*   align-items: center; */
   position: relative; /* position: absolute ... */
 
-  background-color: rgb(255, 255, 255); /* DOES IT MATTER THAT THERE IS OVERFLOW AT THE RIGHT DUE TO DIVS ETC? */
+  background-color: rgb(255, 255, 255);
 
   padding: 0;
   margin: 0;
   border-bottom: 2px solid black;
   /* box-sizing: border-box;  /* already set in style.css * {} */ 
-
-  /* flex-wrap: wrap; /* Allow items to wrap to the next line if needed */ 
 }
 
 .left-header {
  /*  width: 40%; */
  /* width will be what the image is */ 
-  height: 100%;
-
-  display: flex;
-  align-items: start;
-  justify-content: start;
+  height: 100%; 
+  background-color: black;
+  
+/*   display: flex; */
+  /* align-items: start;
+  justify-content: start; */
   margin-right: 10px;
 }
 
 
 .right-header {
-  box-sizing: border-box;
   padding-top: 20px;
   display: flex;
-  align-items: center; /* button gets centered vertically WITHIN right-section...? */
+  align-items: center; /* button gets centered vertically WITHIN right-section... */
 
-  position: absolute;  /* is always shown on the page... will overlap left section... Otherwise there is an overflow to the right on the page...*/
+  position: absolute;  /* is always shown on the page... will overlap left section... Otherwise there is an overflow to the right on the page when content becomes bigger than the section...*/
   right: 10px; 
   bottom: 10px;
-
 }
 
 .nav-header {
@@ -51,7 +48,6 @@
 
   height: 100%;
   width: 100%;
-
 }
 
 .ansok-button-small-text {
