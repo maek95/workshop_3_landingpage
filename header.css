@@ -10,7 +10,7 @@
   align-items: center;
   position: relative; /* position: absolute ... */
 
-  background-color: lightblue; /* DOES IT MATTER THAT THERE IS OVERFLOW AT THE RIGHT DUE TO DIVS ETC? */
+  background-color: rgb(255, 255, 255); /* DOES IT MATTER THAT THERE IS OVERFLOW AT THE RIGHT DUE TO DIVS ETC? */
 
   padding: 0;
   margin: 0;
@@ -25,44 +25,22 @@
  /* width will be what the image is */ 
   height: 100%;
 
-  background-color: aquamarine;
   display: flex;
   align-items: start;
   justify-content: start;
   margin-right: 10px;
-
-  
 }
 
-.middle-section { /*använder inte */
-  background-color: brown;
-  display: flex;
-  flex: 1; /* take up 100% of remaining space...? unneccesary? */
-  align-items: center; /* flexbox code */
-
-
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-top: 20px;
-  
-
-}
 
 .right-header {
   box-sizing: border-box;
   padding-top: 20px;
-  background-color: orangered;
   display: flex;
   align-items: center; /* button gets centered vertically WITHIN right-section...? */
 
   position: absolute;  /* is always shown on the page... will overlap left section... Otherwise there is an overflow to the right on the page...*/
   right: 10px; 
   bottom: 10px;
-/*   max-width: 70%; /* fixed with @media query instead! */
-  
- /*  flex-grow: 1; /* Allow the right-section to grow and take up available space */ 
-/*   flex-shrink: 0; /* Prevent the right-section from shrinking */ 
- /*  flex-basis: auto; /* Let the browser determine the initial width */ 
 
 }
 
@@ -85,7 +63,6 @@
 }
 
 .ansok-button-small {
-
 }
 
 .image-container-header {

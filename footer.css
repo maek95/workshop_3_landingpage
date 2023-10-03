@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center; 
+  background-color: white;
 
   padding-top: 20px;
   padding-bottom: 20px; /* unnecessary? */
@@ -10,6 +11,12 @@
 
   height: 100%; /* of <main> */
   width: 100%;
+
+  background-image: url(images/chas_footer_background.webp);
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
 }
 
 .nav-footer > a {
@@ -17,7 +24,6 @@
 }
 
 .nav-container-footer {
-  background-color: green;
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -25,7 +31,6 @@
 }
 
 .nav-column-footer {
-  background-color: grey;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -38,7 +43,6 @@
  /*  width: 30%; */
   display: flex;
   align-items: center;
-  background-color: purple;
   height: 100%; /* minus section padding */
   width: 30%;
   align-items: center;
